@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduVerse | Academic Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">EDU<span>VERSE</span></div>
+        <div class="nav-links">
+            <a href="portfolio.html">← Back to Portfolio</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero hero-compact">
+            <h1 class="card-title-gold">EduVerse Dashboard</h1>
+            <p>Scale your institution with data-driven insights. EduVerse processes over 1 million data points daily with zero downtime.</p>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <span class="stat-number">10k+</span>
+                    <span class="stat-label">Active Students</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">Uptime Record</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subject Selection Section -->
+        <div class="subject-nav">
+            <button class="poet-btn subject-btn" data-subject="Physics">Physics</button>
+            <button class="poet-btn subject-btn" data-subject="Mathematics">Mathematics</button>
+            <button class="poet-btn subject-btn" data-subject="Computer Science">Computer Science</button>
+        </div>
+
+        <!-- Dynamic Teachers Display Section -->
+        <div id="edu-display" class="grid" style="transition: opacity 0.3s ease; padding-top: 1rem;">
+            <!-- JS will inject teachers here -->
+        </div>
+
+        <div class="section-header">
+            <h2>System Capabilities</h2>
+        </div>
+
+        <section class="grid">
+            <!-- (Keep existing feature cards here, just move them to the bottom) -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+                    </div>
+                    <h3 class="card-title-blue">Real-time Analytics</h3>
+                    <p>Live tracking of student performance using asynchronous Python workers.</p>
+                </div>
+            </div>
+            <!-- ... other cards ... -->
+        </section>
+    </main>
+
+    <!-- Premium Access Modal -->
+    <div id="login-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 class="card-title-gold" style="margin-bottom: 1rem;">Premium Access Required</h2>
+            <p style="color: #94A3B8; margin-bottom: 2rem;">To unlock this lecture and access our full engineering curriculum, please subscribe or log in to your account.</p>
+            <div class="cta-group" style="justify-content: center; opacity: 1;">
+                <a href="contact.html" class="btn btn-primary">Subscribe Now</a>
+                <button onclick="closeModal()" class="btn btn-secondary">Maybe Later</button>
+            </div>
+            <p style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--electric-blue); cursor: pointer;">Already have an account? Log In</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 EduVerse Platform. Engineered by Mateen.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

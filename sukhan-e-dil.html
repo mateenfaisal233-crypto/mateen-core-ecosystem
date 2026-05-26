@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukhan-e-Dil | Literary Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">SUKHAN<span>-E-DIL</span></div>
+        <div class="nav-links">
+            <a href="portfolio.html">← Back to Portfolio</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero hero-compact">
+            <h1 class="card-title-gold">Sukhan-e-Dil Showcase</h1>
+            <p>Select an elite poet to reveal their masterpieces. Hand-coded for an immersive literary experience.</p>
+        </section>
+
+        <!-- Poet Selection Section -->
+        <div class="poet-nav">
+            <button class="poet-btn" data-poet="Ghalib">Mirza Ghalib</button>
+            <button class="poet-btn" data-poet="Iqbal">Allama Iqbal</button>
+            <button class="poet-btn" data-poet="Mir">Mir Taqi Mir</button>
+            <button class="poet-btn" data-poet="Faiz">Faiz Ahmed Faiz</button>
+            <button class="poet-btn" data-poet="Faraz">Ahmad Faraz</button>
+            <button class="poet-btn" data-poet="Parveen">Parveen Shakir</button>
+            <button class="poet-btn" data-poet="Jaun">Jaun Elia</button>
+            <button class="poet-btn" data-poet="Nasir">Nasir Kazmi</button>
+            <button class="poet-btn" data-poet="Jalib">Habib Jalib</button>
+            <button class="poet-btn" data-poet="Muneer">Muneer Niazi</button>
+        </div>
+
+        <!-- Dynamic Shers Display Section -->
+        <div id="shers-display" class="grid" style="transition: opacity 0.3s ease; padding-top: 1rem;">
+            <!-- JS will inject shers here -->
+        </div>
+
+        <div class="section-header">
+            <h2>Web Engine Details</h2>
+        </div>
+
+        <section class="grid" id="features-detail">
+            <div class="card">
+                <div class="card-content">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+                    </div>
+                    <h3 class="card-title-gold">Lush Typography</h3>
+                    <p>Optimized reading experience focused on visual psychology and literary grace.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <h3 class="card-title-blue">Poet's CMS</h3>
+                    <p>A lightweight backend for authors to publish and manage their works seamlessly.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                    </div>
+                    <h3 class="card-title-blue">Literary Critiques</h3>
+                    <p>Analysis of "Metaphors in Iqbal's Philosophy" and the evolution of the modern Nazm in the sub-continent.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17c-.77 2.07-1.86 3.83-3.23 5.36-1.11-1.24-1.93-2.58-2.48-3.96H4.43c.66 1.9 1.75 3.65 3.19 5.21L3.08 17.65 4.5 19.07l3.54-3.54 3.53 3.53 1.3-1.99z"/></svg>
+                    </div>
+                    <h3 class="card-title-blue">Translation Lab</h3>
+                    <p>Bridging the gap: Translating Urdu classics into English and French while maintaining rhythmic soul.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Sukhan-e-Dil. Built by Mateen.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
